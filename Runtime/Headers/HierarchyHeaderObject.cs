@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace unity_extras_package.Runtime.Headers
+namespace unity_extras_package.Headers
 {
     public class HierarchyHeaderObject : MonoBehaviour
     {

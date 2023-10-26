@@ -1,8 +1,7 @@
-using Runtime.Test;
+using unity_extras_package.InspectorExtensions;
 using UnityEditor;
-using UnityEngine;
 
-namespace Editor.Test
+namespace unity_extras_package.Test
 {
     [CustomEditor(typeof(TestComponent))]
     internal class ExtendedEditorTest : ExtendedEditor

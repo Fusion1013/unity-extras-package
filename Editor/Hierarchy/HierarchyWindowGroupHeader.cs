@@ -1,8 +1,8 @@
-using unity_extras_package.Runtime.Headers;
+using unity_extras_package.Headers;
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Editor.Hierarchy
+namespace unity_extras_package.Hierarchy
 {
     /// <summary>
     /// Hierarchy Window Group Header

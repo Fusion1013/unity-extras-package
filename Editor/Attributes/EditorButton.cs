@@ -1,14 +1,13 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using Runtime.Attributes;
 using UnityEditor;
 using UnityEngine;
 
 // Initial Concept by http://www.reddit.com/user/zaikman
 // Revised by http://www.reddit.com/user/quarkism
 
-namespace Editor.Attributes
+namespace unity_extras_package.Attributes
 {
     [CustomEditor(typeof (MonoBehaviour), true)]
     public class EditorButton : UnityEditor.Editor

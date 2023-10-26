@@ -1,8 +1,6 @@
-using System.ComponentModel;
-using Runtime.Attributes;
 using UnityEngine;
 
-namespace Runtime.Test
+namespace unity_extras_package.Test
 {
     public class TestComponent : MonoBehaviour
     {

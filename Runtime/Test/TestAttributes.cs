@@ -1,7 +1,7 @@
-using Runtime.Attributes;
+using unity_extras_package.Attributes;
 using UnityEngine;
 
-namespace Runtime.Test
+namespace unity_extras_package.Test
 {
     [AlwaysSelect]
     public class TestAttributes : MonoBehaviour

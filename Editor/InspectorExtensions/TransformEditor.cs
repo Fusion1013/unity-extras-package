@@ -1,10 +1,9 @@
 using System;
 using UnityEditor;
 using UnityEngine;
-
 using static UnityEngine.Mathf;
 
-namespace Editor
+namespace unity_extras_package.InspectorExtensions
 {
     [CustomEditor(typeof(Transform))]
     [CanEditMultipleObjects]

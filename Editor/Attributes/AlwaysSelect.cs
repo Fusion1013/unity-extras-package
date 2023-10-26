@@ -1,9 +1,7 @@
-using System;
-using Runtime.Attributes;
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Attributes
+namespace unity_extras_package.Attributes
 {
     [CustomEditor(typeof(MonoBehaviour), true)]
     public class AlwaysSelect : UnityEditor.Editor

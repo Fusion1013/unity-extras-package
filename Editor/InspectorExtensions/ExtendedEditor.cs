@@ -1,8 +1,7 @@
 using System;
-using System.Collections.Generic;
 using UnityEditor;
 
-namespace Editor
+namespace unity_extras_package.InspectorExtensions
 {
     public abstract class ExtendedEditor : UnityEditor.Editor
     {
