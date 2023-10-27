@@ -43,9 +43,9 @@ namespace unity_extras_package.Events
 
         private void DisplayListeners(GameEventObject eventObject)
         {
-            _listenersFoldout = EditorGUILayout.Foldout(_listenersFoldout, $"Registered Listeners: {eventObject.Listeners.Count}");
-
+            _listenersFoldout = EditorGUILayout.Foldout(_listenersFoldout, $"Registered Listeners ({eventObject.Listeners.Count})");
             if (!_listenersFoldout) return;
+            
             foreach (var listener in eventObject.Listeners)
             {
                 EditorGUILayout.BeginHorizontal();
