@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace unity_extras_package.Events
@@ -10,21 +11,25 @@ namespace unity_extras_package.Events
         public List<IGameEventListener> Listeners { get; } = new();
 
 #if UNITY_EDITOR
-        public List<Invocation> InvocationHistory { get; } = new();
+        [SerializeField] [HideInInspector] private List<Invocation> invocationHistory = new();
+        public List<Invocation> InvocationHistory => invocationHistory; 
+        [SerializeField] [HideInInspector] private bool pauseOnEvent;
 #endif
 
-        public void Invoke(GameObject source, string description = "") => Invoke(source.name, description);
-        public void Invoke(string source, string description = "")
+        public void Invoke(GameObject sourceObject, string description = "") => Invoke(InvocationSource.Runtime, sourceObject, description);
+        public void Invoke(InvocationSource source, GameObject sourceObject, string description = "")
         {
             for (int i = Listeners.Count-1; i >= 0; i--) Listeners[i].OnInvoke();
 
 #if UNITY_EDITOR
-            InvocationHistory.Add(new Invocation()
+            invocationHistory.Add(new Invocation()
             {
                 source = source,
+                title = source == InvocationSource.Runtime ? sourceObject.name : "Editor",
                 description = description,
                 timeStamp = DateTime.Now
             });
+            if (pauseOnEvent && EditorApplication.isPlaying) EditorApplication.isPaused = true;
 #endif
         }
 
@@ -35,10 +40,15 @@ namespace unity_extras_package.Events
         [Serializable]
         public struct Invocation
         {
-            public string source;
+            public InvocationSource source;
+            public string title;
             public string description;
             public DateTime timeStamp;
         }
 #endif
+        public enum InvocationSource
+        {
+            Runtime, Editor
+        }
     }
 }
