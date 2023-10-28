@@ -1,15 +1,11 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace unity_extras_package.Variable.Float
+namespace unity_extras_package.Variable
 {
     [CreateAssetMenu(fileName = "New Float Variable", menuName = "Variables/Float")]
-    public class FloatVariable : ScriptableObject
+    public class FloatVariable : DevScriptableObject
     {
-#if UNITY_EDITOR
-        [Multiline] public string developerDescription = "";
-#endif
         [SerializeField] private float value;
         public float Value
         {

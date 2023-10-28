@@ -1,10 +1,9 @@
 using System;
-using UnityEngine;
 
-namespace unity_extras_package.Variable.Float
+namespace unity_extras_package.Variable
 {
     [Serializable]
-    public class FloatReference
+    public class FloatReference : VariableReference
     {
         public bool useConstant = true;
         public float constantValue;
