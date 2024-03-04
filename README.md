@@ -84,13 +84,17 @@ public IntReference intReference;
 ## Editor Extensions
 ### Matrix 4x4 Drawer
 Property drawer for a 4x4 matrix in the inspector. Allows for editing the matrix directly in the inspector.
+
 ![bild](https://github.com/Fusion1013/unity-extras-package/assets/35802522/17d49662-3319-4cf2-9342-1b8f6f7851ac)
 ### Normals Visualizer
 Visualize normals on a mesh.
+
 ![bild](https://github.com/Fusion1013/unity-extras-package/assets/35802522/16165006-a0ed-4c9b-8dcb-373f917e372a)
 
 ![bild](https://github.com/Fusion1013/unity-extras-package/assets/35802522/9dcf33a2-94d0-467e-83b5-8cddfaa7f883)
 ### Transform Editor
 Adds functionality to the transform component.
+
 ![bild](https://github.com/Fusion1013/unity-extras-package/assets/35802522/d59fa2e2-0cdf-415e-948f-8f77947cc1e3)
+
 **Snap:** Snap the gameobject along the cartesian coordinate axis.
