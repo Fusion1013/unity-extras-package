@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace unity_extras_package.Events
+namespace FusionUnityExtras.Runtime.Events
 {
     [CreateAssetMenu(fileName = "New Game Event String Object", menuName = "Fusion/Events/Game Event Int Object")]
     public class GameEventObjectInt : GameEventObjectBase

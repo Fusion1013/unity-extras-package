@@ -1,10 +1,11 @@
+using FusionUnityExtras.Runtime.Instance;
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Instance
+namespace FusionUnityExtras.Editor.Instance
 {
     [CustomEditor(typeof(InstanceIdentityObject))]
-    public class InstanceIdentityObjectEditor : Editor
+    public class InstanceIdentityObjectEditor : UnityEditor.Editor
     {
         private bool _instanceListFoldout;
         

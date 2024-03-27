@@ -8,7 +8,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace unity_extras_package.Attributes
+namespace FusionUnityExtras.Editor.Attributes
 {
     /// <summary>
     /// A popup window that displays a list of options and may use a search

@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEngine.Mathf;
 
-namespace unity_extras_package.InspectorExtensions
+namespace FusionUnityExtras.Editor.InspectorExtensions
 {
     [CustomEditor(typeof(Transform))]
     [CanEditMultipleObjects]

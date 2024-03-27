@@ -1,8 +1,7 @@
 using System;
-using unity_extras_package.SceneAsset;
-using UnityEngine;
+using FusionUnityExtras.Runtime.SceneAsset;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Runtime.Variable
 {
     [Serializable]
     public class SceneReference : VariableReference<SceneAssetReference, SceneVariable> { }

@@ -1,8 +1,8 @@
-using System;
+using FusionUnityExtras.Runtime.Events;
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Events
+namespace FusionUnityExtras.Editor.Events
 {
     public class EventObjectEditorWindow : EditorWindow
     {

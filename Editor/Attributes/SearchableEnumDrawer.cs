@@ -1,4 +1,5 @@
 using System;
+using FusionUnityExtras.Runtime.Attributes;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-    namespace unity_extras_package.Attributes
+    namespace FusionUnityExtras.Editor.Attributes
     {
         /// <summary>
         /// Draws the custom enum selector popup for enum fileds using the

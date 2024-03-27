@@ -1,7 +1,6 @@
 using System;
-using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Runtime.Variable
 {
     [Serializable]
     public abstract class VariableReference<T, V> where V : VariableBase<T>

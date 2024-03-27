@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace unity_extras_package
+namespace FusionUnityExtras.Runtime
 {
     public abstract class DevScriptableObject : ScriptableObject
     {

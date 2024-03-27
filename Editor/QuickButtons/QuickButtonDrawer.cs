@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Reflection;
+using FusionUnityExtras.Runtime.QuickButtons;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace unity_extras_package.QuickButtons
+namespace FusionUnityExtras.Editor.QuickButtons
 {
     [CustomPropertyDrawer(typeof(QuickButton))]
     public class QuickButtonDrawer : PropertyDrawer

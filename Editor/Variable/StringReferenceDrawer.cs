@@ -1,7 +1,7 @@
+using FusionUnityExtras.Runtime.Variable;
 using UnityEditor;
-using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Editor.Variable
 {
     [CustomPropertyDrawer(typeof(StringReference))]
     public class StringReferenceDrawer : VariableReferenceDrawer

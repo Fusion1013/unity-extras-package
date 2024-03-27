@@ -1,7 +1,7 @@
 using System;
 using UnityEditor;
 
-namespace unity_extras_package.InspectorExtensions
+namespace FusionUnityExtras.Editor.InspectorExtensions
 {
     public abstract class ExtendedEditor : UnityEditor.Editor
     {

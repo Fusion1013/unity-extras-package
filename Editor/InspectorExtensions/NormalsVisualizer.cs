@@ -4,7 +4,7 @@ using UnityEngine;
 // Modified from:
 // https://gist.github.com/mandarinx/ed733369fbb2eea6c7fa9e3da65a0e17
 
-namespace unity_extras_package.InspectorExtensions
+namespace FusionUnityExtras.Editor.InspectorExtensions
 {
     [CustomEditor(typeof(MeshFilter))]
     public class NormalsVisualizer : ExtendedEditor

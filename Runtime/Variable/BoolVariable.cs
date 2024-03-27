@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Runtime.Variable
 {
     [CreateAssetMenu(fileName = "New Bool Variable", menuName = "Fusion/Variables/Bool")]
     public class BoolVariable : VariableBase<bool> { }

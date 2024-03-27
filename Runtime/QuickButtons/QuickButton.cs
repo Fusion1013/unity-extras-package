@@ -7,7 +7,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace unity_extras_package.QuickButtons
+namespace FusionUnityExtras.Runtime.QuickButtons
 {
     /// <summary>
     /// QuickButtons can be placed in any MonoBehaviour, ScriptableObject,

@@ -1,6 +1,6 @@
 using System;
 
-namespace unity_extras_package.QuickButtons
+namespace FusionUnityExtras.Runtime.QuickButtons
 {
     [AttributeUsage(AttributeTargets.All)]
     public class EditorButtonAttribute : Attribute

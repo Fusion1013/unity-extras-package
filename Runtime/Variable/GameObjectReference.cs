@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Runtime.Variable
 {
     [Serializable]
     public class GameObjectReference : VariableReference<GameObject, GameObjectVariable> { }

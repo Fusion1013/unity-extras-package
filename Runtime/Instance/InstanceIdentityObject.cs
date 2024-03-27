@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using unity_extras_package.Attributes;
+using FusionUnityExtras.Runtime.Attributes;
 using UnityEngine;
 
-namespace unity_extras_package.Instance
+namespace FusionUnityExtras.Runtime.Instance
 {
     [CreateAssetMenu(fileName = "New Instance Identity", menuName = "Fusion/Instance/Identity")]
     public class InstanceIdentityObject : ScriptableObject

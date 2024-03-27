@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.InspectorExtensions
+namespace FusionUnityExtras.Editor.InspectorExtensions
 {
     [CustomPropertyDrawer(typeof(Matrix4x4))]
     public class Matrix4X4Drawer : PropertyDrawer

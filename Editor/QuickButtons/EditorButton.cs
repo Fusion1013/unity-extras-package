@@ -1,17 +1,17 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using unity_extras_package.Attributes;
+using FusionUnityExtras.Runtime.QuickButtons;
 using UnityEditor;
 using UnityEngine;
 
 // Initial Concept by http://www.reddit.com/user/zaikman
 // Revised by http://www.reddit.com/user/quarkism
 
-namespace unity_extras_package.QuickButtons
+namespace FusionUnityExtras.Editor.QuickButtons
 {
     [CustomEditor(typeof (MonoBehaviour), true)]
-    public class EditorButton : Editor
+    public class EditorButton : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

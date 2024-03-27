@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using FusionUnityExtras.Runtime.Events;
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Events
+namespace FusionUnityExtras.Editor.Events
 {
-    public abstract class GameEventObjectBaseEditor : Editor
+    public abstract class GameEventObjectBaseEditor : UnityEditor.Editor
     {
         #region Fields
 

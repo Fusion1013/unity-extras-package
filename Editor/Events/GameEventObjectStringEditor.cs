@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
+using FusionUnityExtras.Runtime.Events;
 using UnityEditor;
 
-namespace unity_extras_package.Events
+namespace FusionUnityExtras.Editor.Events
 {
     [CustomEditor(typeof(GameEventObjectString))]
     public class GameEventObjectStringEditor : GameEventObjectBaseEditor

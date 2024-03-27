@@ -1,4 +1,5 @@
 using System;
+using FusionUnityExtras.Runtime.SceneAsset;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace unity_extras_package.SceneAsset
+namespace FusionUnityExtras.Editor.SceneAsset
 {
     /// <summary>
     /// Editor for a scene reference that can display error prompts and offer

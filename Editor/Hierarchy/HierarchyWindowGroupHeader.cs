@@ -1,7 +1,8 @@
+using FusionUnityExtras.Runtime.Hierarchy;
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Hierarchy
+namespace FusionUnityExtras.Editor.Hierarchy
 {
     /// <summary>
     /// Hierarchy Window Group Header

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Runtime.Variable
 {
     public class AnimatorBoolSetter : MonoBehaviour
     {

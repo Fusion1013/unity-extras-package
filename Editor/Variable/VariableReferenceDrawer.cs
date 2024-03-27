@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace unity_extras_package.Variable
+namespace FusionUnityExtras.Editor.Variable
 {
     public abstract class VariableReferenceDrawer : PropertyDrawer
     {

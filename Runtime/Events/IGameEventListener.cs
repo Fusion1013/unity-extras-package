@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace unity_extras_package.Events
+namespace FusionUnityExtras.Runtime.Events
 {
     public interface IGameEventListener
     {
