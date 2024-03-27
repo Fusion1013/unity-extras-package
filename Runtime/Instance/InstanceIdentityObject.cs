@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace unity_extras_package.Instance
 {
-    [CreateAssetMenu(fileName = "New Instance Identity", menuName = "Instance/Identity")]
+    [CreateAssetMenu(fileName = "New Instance Identity", menuName = "Fusion/Instance/Identity")]
     public class InstanceIdentityObject : ScriptableObject
     {
         public string identityName;

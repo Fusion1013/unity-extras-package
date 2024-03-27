@@ -5,50 +5,38 @@ using UnityEngine;
 
 namespace unity_extras_package.Events
 {
-    [CreateAssetMenu(fileName = "New Game Event Object", menuName = "Events/Game Event Object")]
-    public class GameEventObject : ScriptableObject
+    [CreateAssetMenu(fileName = "New Game Event Object", menuName = "Fusion/Events/Game Event Object")]
+    public class GameEventObject : GameEventObjectBase
     {
-        public List<IGameEventListener> Listeners { get; } = new();
+        public delegate void GameEventMethod();
+        public readonly List<GameEventMethod> invocationList = new();
 
-#if UNITY_EDITOR
-        [SerializeField] [HideInInspector] private List<Invocation> invocationHistory = new();
-        public List<Invocation> InvocationHistory => invocationHistory; 
-        [SerializeField] [HideInInspector] private bool pauseOnEvent;
-#endif
-
-        public void Invoke(GameObject sourceObject, string description = "") => Invoke(InvocationSource.Runtime, sourceObject, description);
-        public void Invoke(InvocationSource source, GameObject sourceObject, string description = "")
+        public void Invoke(string description = "") => Invoke(InvocationSource.Runtime, description);
+        public void Invoke(InvocationSource source, string description = "")
         {
-            for (int i = Listeners.Count-1; i >= 0; i--) Listeners[i].OnInvoke();
+            for (int i = invocationList.Count-1; i >= 0; i--) invocationList[i].Invoke();
 
 #if UNITY_EDITOR
-            invocationHistory.Add(new Invocation()
-            {
-                source = source,
-                title = source == InvocationSource.Runtime ? sourceObject.name : "Editor",
-                description = description,
-                timeStamp = DateTime.Now
-            });
-            if (pauseOnEvent && EditorApplication.isPlaying) EditorApplication.isPaused = true;
+            AddHistory(source, GetCaller(), Array.Empty<object>(), description);
 #endif
         }
 
-        public void Subscribe(IGameEventListener listener) => Listeners.Add(listener);
-        public void Unsubscribe(IGameEventListener listener) => Listeners.Remove(listener);
+        #region Subscribe / Unsubscribe
 
-#if UNITY_EDITOR
-        [Serializable]
-        public struct Invocation
+        public GameEventObject Subscribe(GameEventMethod method)
         {
-            public InvocationSource source;
-            public string title;
-            public string description;
-            public DateTime timeStamp;
+            invocationList.Add(method);
+            return this;
         }
-#endif
-        public enum InvocationSource
+        public GameEventObject Unsubscribe(GameEventMethod method)
         {
-            Runtime, Editor
+            invocationList.Remove(method);
+            return this;
         }
+        
+        public static GameEventObject operator +(GameEventObject obj, GameEventMethod method) => obj.Subscribe(method);
+        public static GameEventObject operator -(GameEventObject obj, GameEventMethod method) => obj.Unsubscribe(method);
+
+        #endregion
     }
 }

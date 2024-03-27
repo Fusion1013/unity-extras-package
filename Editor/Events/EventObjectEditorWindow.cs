@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace unity_extras_package.Events
 {
-    public class EventObjectEditorWindow : EditorWindow, IGameEventListener
+    public class EventObjectEditorWindow : EditorWindow
     {
         // History options
         private bool _showTimestamp = true;
@@ -30,19 +30,19 @@ namespace unity_extras_package.Events
         private void OnDisable()
         {
             Selection.selectionChanged -= SwitchSelection;
-            if (_selectedObject) _selectedObject.Unsubscribe(this);
+            if (_selectedObject) _selectedObject -= OnInvoke;
         }
 
         private void SwitchSelection()
         {
             var selected = Selection.activeObject;
-            
-            if (_selectedObject) _selectedObject.Unsubscribe(this);
+
+            if (_selectedObject) _selectedObject -= OnInvoke;
             
             if (selected is GameEventObject eventObject) _selectedObject = eventObject;
             else _selectedObject = null;
 
-            if (_selectedObject) _selectedObject.Subscribe(this);
+            if (_selectedObject) _selectedObject += OnInvoke;
             
             Repaint();
         }
