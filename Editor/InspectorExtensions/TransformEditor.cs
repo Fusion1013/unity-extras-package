@@ -16,6 +16,7 @@ namespace FusionUnityExtras.Editor.InspectorExtensions
 
         private void OnEnable()
         {
+            if (targets.Length <= 0) return;
             _defaultEditor = CreateEditor(targets, Type.GetType("UnityEditor.TransformInspector, UnityEditor"));
 
             // Load variables
