@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using static UnityEngine.Mathf;
@@ -17,6 +18,7 @@ namespace FusionUnityExtras.Editor.InspectorExtensions
         private void OnEnable()
         {
             if (targets.Length <= 0) return;
+            if (targets.Any(t => t == null)) return;
             var editorType = Type.GetType("UnityEditor.TransformInspector, UnityEditor");
             if (editorType == null) return;
             _defaultEditor = CreateEditor(targets, editorType);
