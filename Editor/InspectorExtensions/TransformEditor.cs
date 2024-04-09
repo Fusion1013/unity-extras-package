@@ -6,7 +6,7 @@ using static UnityEngine.Mathf;
 
 namespace FusionUnityExtras.Editor.InspectorExtensions
 {
-    [CustomEditor(typeof(Transform))]
+    // [CustomEditor(typeof(Transform))]
     [CanEditMultipleObjects]
     public class TransformEditor : UnityEditor.Editor
     {
