@@ -23,8 +23,8 @@ namespace FusionUnityExtras.Editor.InspectorExtensions
             if (_defaultEditor == null) return;
 
             // Load variables
-            _snapDistance = EditorPrefs.GetInt("transform_snap_distance");
-            _isExtended = EditorPrefs.GetBool("transform_foldout_extended");
+            _snapDistance = EditorPrefs.GetInt("transform_snap_distance", 1);
+            _isExtended = EditorPrefs.GetBool("transform_foldout_extended", false);
         }
 
         private void OnDisable()
