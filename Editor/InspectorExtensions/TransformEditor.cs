@@ -17,7 +17,10 @@ namespace FusionUnityExtras.Editor.InspectorExtensions
         private void OnEnable()
         {
             if (targets.Length <= 0) return;
-            _defaultEditor = CreateEditor(targets, Type.GetType("UnityEditor.TransformInspector, UnityEditor"));
+            var editorType = Type.GetType("UnityEditor.TransformInspector, UnityEditor");
+            if (editorType == null) return;
+            _defaultEditor = CreateEditor(targets, editorType);
+            if (_defaultEditor == null) return;
 
             // Load variables
             _snapDistance = EditorPrefs.GetInt("transform_snap_distance");
