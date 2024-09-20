@@ -19,7 +19,8 @@ namespace FusionUnityExtras.Runtime.Debugging
             DrawSplineLine(from, to, controlPoint, segments, 
                 lineType is LineType.Dotted or LineType.DottedDoubleArrow or LineType.DottedEndWithArrow or LineType.DottedStartWithArrow,
                 lineType is LineType.StartWithArrow or LineType.DottedStartWithArrow or LineType.DoubleArrow or LineType.DottedDoubleArrow,
-                lineType is LineType.EndWithArrow or LineType.DottedEndWithArrow or LineType.DoubleArrow or LineType.DottedDoubleArrow
+                lineType is LineType.EndWithArrow or LineType.DottedEndWithArrow or LineType.DoubleArrow or LineType.DottedDoubleArrow,
+                arrowHeadLength, arrowHeadAngle
             );
         }
 
