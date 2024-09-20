@@ -11,8 +11,8 @@ namespace FusionUnityExtras.Editor.Attributes
             var c = serializedObject.targetObject as Component;
             if (c == null) return;
             
-            SceneVisibilityManager.instance.DisablePicking(c.gameObject, true);
-            SceneVisibilityManager.instance.EnablePicking(c.gameObject, false);
+            // SceneVisibilityManager.instance.DisablePicking(c.gameObject, true);
+            // SceneVisibilityManager.instance.EnablePicking(c.gameObject, false);
         }
     }
 }
