@@ -1,6 +1,6 @@
 using System;
 
-namespace FusionUnityExtras.Runtime.Attributes
+namespace FusionUnityExtras.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class AlwaysSelectAttribute : Attribute

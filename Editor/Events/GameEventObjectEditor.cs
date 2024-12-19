@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using FusionUnityExtras.Runtime.Events;
+using FusionUnityExtras.Events;
 using UnityEditor;
 
 namespace FusionUnityExtras.Editor.Events

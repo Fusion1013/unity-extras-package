@@ -1,4 +1,4 @@
-using FusionUnityExtras.Runtime.Instance;
+using FusionUnityExtras.Instance;
 using UnityEditor;
 using UnityEngine;
 

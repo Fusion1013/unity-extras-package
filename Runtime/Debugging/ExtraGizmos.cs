@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Debugging
+namespace FusionUnityExtras.Debugging
 {
     public enum LineType
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Instance
+namespace FusionUnityExtras.Instance
 {
     public class InstanceBehaviour : MonoBehaviour
     {

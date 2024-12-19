@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Hierarchy
+namespace FusionUnityExtras.Hierarchy
 {
     public class HierarchyHeaderObject : MonoBehaviour
     {

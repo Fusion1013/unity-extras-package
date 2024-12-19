@@ -1,7 +1,7 @@
-using FusionUnityExtras.Runtime.SceneAsset;
+using FusionUnityExtras.SceneAsset;
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     [CreateAssetMenu(fileName = "New Scene Variable", menuName = "Fusion/Variables/Scene")]
     public class SceneVariable : VariableBase<SceneAssetReference> { }

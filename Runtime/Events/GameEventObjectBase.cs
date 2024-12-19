@@ -4,7 +4,7 @@ using System.Diagnostics;
 using UnityEditor;
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Events
+namespace FusionUnityExtras.Events
 {
     public abstract class GameEventObjectBase : ScriptableObject
     {

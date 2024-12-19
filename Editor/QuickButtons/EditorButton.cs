@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using FusionUnityExtras.Runtime.QuickButtons;
+using FusionUnityExtras.QuickButtons;
 using UnityEditor;
 using UnityEngine;
 

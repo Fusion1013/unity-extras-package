@@ -1,6 +1,6 @@
 using System;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     [Serializable]
     public class IntReference : VariableReference<int, IntVariable> { }

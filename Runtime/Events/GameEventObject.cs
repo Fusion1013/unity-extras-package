@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Events
+namespace FusionUnityExtras.Events
 {
     [CreateAssetMenu(fileName = "New Game Event Object", menuName = "Fusion/Events/Game Event Object")]
     public class GameEventObject : GameEventObjectBase

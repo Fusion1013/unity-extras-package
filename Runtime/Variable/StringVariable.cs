@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     [CreateAssetMenu(fileName = "New String Variable", menuName = "Fusion/Variables/String")]
     public class StringVariable : VariableBase<string> { }

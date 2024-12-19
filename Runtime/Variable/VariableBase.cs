@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     public abstract class VariableBase<T> : DevScriptableObject
     {

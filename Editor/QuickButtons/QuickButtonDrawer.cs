@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Reflection;
-using FusionUnityExtras.Runtime.QuickButtons;
+using FusionUnityExtras.QuickButtons;
 using UnityEditor;
 using UnityEngine;
 

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using FusionUnityExtras.Runtime.Attributes;
+using FusionUnityExtras.Attributes;
 using UnityEditor;
 using UnityEngine;
 

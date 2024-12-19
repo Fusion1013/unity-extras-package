@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     [CreateAssetMenu(fileName = "New Int Variable", menuName = "Fusion/Variables/Int")]
     public class IntVariable : VariableBase<int> { }

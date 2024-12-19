@@ -1,4 +1,4 @@
-using FusionUnityExtras.Runtime.Hierarchy;
+using FusionUnityExtras.Hierarchy;
 using UnityEditor;
 using UnityEngine;
 

@@ -6,7 +6,7 @@ using UnityEngine;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace FusionUnityExtras.Runtime.Attributes
+namespace FusionUnityExtras.Attributes
 {
     /// <summary>
     /// Put this attribute on a public (or SerialzeField) enum in a

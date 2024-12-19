@@ -1,5 +1,5 @@
 using System;
-using FusionUnityExtras.Runtime.SceneAsset;
+using FusionUnityExtras.SceneAsset;
 using UnityEditor;
 using UnityEngine;
 

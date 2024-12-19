@@ -1,6 +1,6 @@
 {
     "name": "FusionUnityExtras.Editor",
-    "rootNamespace": "FusionUnityExtras",
+    "rootNamespace": "FusionUnityExtras.Editor",
     "references": [
         "GUID:f50caff63e170804281acd281480f195"
     ],

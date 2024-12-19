@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FusionUnityExtras.Runtime.Variable
+namespace FusionUnityExtras.Variable
 {
     public class Vector3Reference : VariableReference<Vector3, Vector3Variable> { }
 }

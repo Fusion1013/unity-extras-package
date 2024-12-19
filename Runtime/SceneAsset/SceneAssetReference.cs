@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 // Date:   05/01/2018
 // ----------------------------------------------------------------------------
 
-namespace FusionUnityExtras.Runtime.SceneAsset
+namespace FusionUnityExtras.SceneAsset
 {
     /// <summary>
     /// Class used to serialize a reference to a scene asset that can be used
