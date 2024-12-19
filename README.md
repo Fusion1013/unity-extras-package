@@ -98,3 +98,6 @@ Adds functionality to the transform component.
 ![bild](https://github.com/Fusion1013/unity-extras-package/assets/35802522/d59fa2e2-0cdf-415e-948f-8f77947cc1e3)
 
 **Snap:** Snap the gameobject along the cartesian coordinate axis.
+
+## Unique ID
+Creates a unique ID for the object. Works for ScriptableObjects and MonoBehaviours
